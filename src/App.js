@@ -39,7 +39,7 @@ export default class App extends React.Component {
 
         // sending GET request
         axios.get(
-            `http://api.weatherapi.com/v1/current.json?key=${config.API_KEY}&q=${this.state.location}`
+            `https://api.weatherapi.com/v1/current.json?key=${config.API_KEY}&q=${this.state.location}`
         ).then(resp => {
             return resp.data
         })
